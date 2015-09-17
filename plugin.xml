@@ -21,8 +21,8 @@
             <clobbers target="device" />
         </js-module>
 
-		<header-file src="src/ios/CDVDevice.h" />
-		<source-file src="src/ios/CDVDevice.m" />
+	<header-file src="src/ios/CanvasCamera.h" />
+	<source-file src="src/ios/CanvasCamera.m" />
 
      </platform>
           
