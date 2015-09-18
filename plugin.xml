@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-		id="org.apache.cordova.speech.canvascamera"
-		version="0.1.0">
-    <name>canvascamera</name>
+    id="com.gorbiz.canvascamera"
+    version="0.2.0">
+    <name>CanvasCamera</name>
     <description>Cordova Canvas Camera Plugin</description>
     <license>MIT</license>
     <keywords>cordova,canvas,camera</keywords>
 
-    <!-- android -->
     <platform name="ios">
-        
         <config-file target="config.xml" parent="/*">
-            <feature name="canvascamera">
-            	<param name="ios-package" value="org.apache.cordova.speech.canvascamera"/>
+            <feature name="CanvasCamera">
+              <param name="ios-package" value="CanvasCamera"/>
+              <param name="onload" value="true"/>
             </feature>
         </config-file>
 
         <js-module src="src/www/CanvasCamera.js" name="CanvasCamera">
-            <clobbers target="device" />
+          <clobbers target="CanvasCamera" />
         </js-module>
 
-	<header-file src="src/ios/CanvasCamera.h" />
-	<source-file src="src/ios/CanvasCamera.m" />
+        <header-file src="src/ios/CanvasCamera.h" />
+        <source-file src="src/ios/CanvasCamera.m" />
 
+        <framework src="CoreVideo.framework" />
      </platform>
-          
 </plugin>

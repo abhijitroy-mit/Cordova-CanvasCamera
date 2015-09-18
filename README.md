@@ -8,8 +8,7 @@ It uses *AVCaptureVideoDataOutput* to create a capture session. Each frame is ba
 
 ### How to Install
 ***
-1. If not already present, add the CoreVideo.framework library in the Build Phases tab of the project
-2. `cordova plugin add https://github.com/gorbiz/Cordova-CanvasCamera.git`
+`cordova plugin add https://github.com/gorbiz/Cordova-CanvasCamera.git`
 
 ### How to Use
 ***
